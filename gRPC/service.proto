@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service SummaService {
+    rpc SummaOfTwo (Request) returns (Reply) {}
+}
+
+message Request {
+    int32 first_variable = 1;
+    int32 second_variable = 2;
+}
+
+message Reply {
+    int32 sum = 1;
+}
