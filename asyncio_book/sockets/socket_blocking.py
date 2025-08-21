@@ -19,6 +19,7 @@ try:
             buffer = b""
 
             while buffer[-2:] != b"]\n":
+                print(buffer[-2:])
                 data = connection.recv(2)
                 if not data:
                     break
